@@ -1,9 +1,10 @@
 import React from 'react';
+import Button from "./Components/Button";
+import {noop} from "./utils/noop";
 
-const App = props => (
-    <div>
-      <h1>Application components will be here</h1>
-    </div>
-)
+const App = () => {
+
+    return <Button onClick={noop}>Your Workplaces</Button>
+}
 
 export default App;
