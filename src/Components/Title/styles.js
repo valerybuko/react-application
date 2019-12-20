@@ -1,10 +1,11 @@
 import {css} from 'styled-components';
 import colors from "../../themes/colors";
+import fonts from "../../themes/fonts";
 
 export const TitleStyles = css`
-    font-family: "Times New Roman", Times, serif;
-    font-size: ${props => props.fontSize || '24px'}
-    font-style: normal;
-    font-weight: bold;
+    font-family: ${fonts.fontFamilyDefaultTitle};
+    font-size: ${props => props.fontSize || fonts.fontSize24}
+    font-style: ${fonts.fontStyleNormal};
+    font-weight: ${fonts.fontWeightBold};
     color: ${colors.black}
 `;
