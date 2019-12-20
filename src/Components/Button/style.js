@@ -1,5 +1,5 @@
 import {css} from "styled-components";
-import colors from '../../themes/colors'
+import colors from '../../themes/colors';
 
 export const ButtonStyles = css`
     box-sizing: border-box;
