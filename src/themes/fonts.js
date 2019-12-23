@@ -1,7 +1,7 @@
 import '../fonts.css';
 
 export const defaultFonts = {
-    fontFamilyDefaultTitle: '"Times New Roman", Times, serif',
+    fontFamilyDefaultTitle: 'RT Raleway Regular',
     htmlFontSize: '16px',
     titleFontSize: '24px',
     fontStyleNormal: 'normal',
