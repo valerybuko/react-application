@@ -6,6 +6,7 @@ module.exports = {
     },
     "extends": "airbnb-base",
     "extends": [
+        "airbnb-base",
         'plugin:react/recommended'
     ],
     "globals": {

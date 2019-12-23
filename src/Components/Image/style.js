@@ -1,5 +1,5 @@
-import {css} from "styled-components";
-import colors from "../../themes/colors";
+import { css } from 'styled-components';
+import colors from '../../themes/colors';
 
 export const ImageStyles = css`
     width: 150px;
