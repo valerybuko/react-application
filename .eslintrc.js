@@ -3,10 +3,7 @@ module.exports = {
         "browser": true,
         "es6": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ],
+    "extends": "airbnb-base", 
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
@@ -22,6 +19,7 @@ module.exports = {
         "react"
     ],
     "rules": {
-        "semi": ["error", "always"]
+        "import/prefer-default-export": "off",
+        "linebreak-style": ["error", process.env.NODE_ENV === 'prod' ? "unix" : "windows"]
     }
 };

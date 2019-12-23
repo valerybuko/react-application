@@ -1,7 +1,7 @@
-import {css} from "styled-components";
-import colors from "../../themes/colors";
+import { css } from 'styled-components';
+import colors from '../../themes/colors';
 
-export const LinkStyles = css `
+export const LinkStyles = css`
     color: ${colors.black};
     text-decoration: none;
     display: inline-block;

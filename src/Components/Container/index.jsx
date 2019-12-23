@@ -1,6 +1,8 @@
-import styled from "styled-components";
-import {ContainerStyles} from "./styles";
+import styled from 'styled-components';
+import { ContainerStyles } from './styles';
 
-const Container = styled.div`${ContainerStyles}`;
+const Container = styled.div`
+  ${ContainerStyles}
+`;
 
 export default Container;
