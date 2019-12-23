@@ -1,4 +1,4 @@
-import {css} from "styled-components";
+import { css } from 'styled-components';
 import colors from '../../themes/colors';
 
 export const ButtonStyles = css`
@@ -11,9 +11,9 @@ export const ButtonStyles = css`
     border-radius: 5px;
     background-color: ${colors.lilac};
     color: ${colors.white};
-    opacity: ${props => (props.disabled ? 0.3 : 0.9)};
+    opacity: ${(props) => (props.disabled ? 0.3 : 0.9)};
     
     &:hover {
-        opacity: ${props => (props.disabled ? 0.3 : 1)};
+        opacity: ${(props) => (props.disabled ? 0.3 : 1)};
     }
  `;
