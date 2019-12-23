@@ -25,6 +25,7 @@ module.exports = {
     ],
     "rules": {
         "import/prefer-default-export": "off",
-        "linebreak-style": ["error", process.env.NODE_ENV === 'prod' ? "unix" : "windows"]
+        "linebreak-style": ["error", process.env.NODE_ENV === 'prod' ? "unix" : "windows"],
+        "import/no-unresolved": "off",
     }
 };
