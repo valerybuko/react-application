@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MainContainerStyles } from './styles/MainContainer/MainContainer';
 import { HeaderStyles } from './styles/Header/Header';
@@ -13,17 +14,14 @@ import Logo from '../Logo';
 import {
   linkNavbarData,
   logoURL,
-  getStartedURL,
-  signInURL, linkFooterData,
+  linkFooterData,
 } from '../../mockdata/linkdata';
 import LinkItem from '../LinkItem';
 import Button from '../Button';
 import Title from '../Title';
 import Container from '../Container';
-// eslint-disable-next-line import/named
 import { TitleWrapper2Styles } from './styles/Section2/TitleWrapper2';
 import { LinkWrapperStyles } from './styles/Section2/LinkWrapper';
-// eslint-disable-next-line import/named
 import { TitleWrapper3Styles } from './styles/Section3/TitleWrapper3';
 import { ButtonWrapperStyles } from './styles/Section3/ButtonWrapper';
 
@@ -54,12 +52,12 @@ const MenuView = () => (
     <MainContainer>
         <Header>
             <HeaderNavbar>
-                <LinkItem href={logoURL}><Logo/></LinkItem>
+                <NavLink to={'/'}><Logo/></NavLink>
                 {headerNavbar}
             </HeaderNavbar>
             <HeaderLogin>
-                <LinkItem href={signInURL}>Sign In</LinkItem>
-                <LinkItem href={getStartedURL}><Button>Get started</Button></LinkItem>
+                <NavLink to={'sign'}>Sign In</NavLink>
+                <NavLink to={'started'}><Button>Get started</Button></NavLink>
             </HeaderLogin>
         </Header>
         <Section1>
