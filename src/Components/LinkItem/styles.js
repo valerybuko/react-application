@@ -6,6 +6,8 @@ export const LinkStyles = css`
     text-decoration: none;
     display: inline-block;
     margin: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
      
     &:hover {
         color: ${colors.darkblue};

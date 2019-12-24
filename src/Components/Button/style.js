@@ -7,6 +7,7 @@ export const ButtonStyles = css`
     min-height: 45px;
     padding: 15px;
     margin: 15px;
+    margin-top: 0;
     border: 1px solid ${colors.lilac};
     border-radius: 5px;
     background-color: ${colors.lilac};
