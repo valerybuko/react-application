@@ -13,7 +13,6 @@ import { FooterStyles } from './styles/Footer/Footer';
 import Logo from '../Logo';
 import {
   linkNavbarData,
-  logoURL,
   linkFooterData,
 } from '../../mockdata/linkdata';
 import LinkItem from '../LinkItem';
@@ -24,11 +23,14 @@ import { TitleWrapper2Styles } from './styles/Section2/TitleWrapper2';
 import { LinkWrapperStyles } from './styles/Section2/LinkWrapper';
 import { TitleWrapper3Styles } from './styles/Section3/TitleWrapper3';
 import { ButtonWrapperStyles } from './styles/Section3/ButtonWrapper';
+import { SignInLabelStyles } from './styles/Header/SignInWrapper';
+import navLinkStyles from './styles/Header/NavLink.module.css';
 
 const MainContainer = styled.div`${MainContainerStyles}`;
 const Header = styled.div`${HeaderStyles}`;
 const HeaderNavbar = styled.div`${HeaderNavbarStyles}`;
 const HeaderLogin = styled.div`${HeaderLoginStyles}`;
+const SignInLabel = styled.strong`${SignInLabelStyles}`;
 const Section1 = styled.section`${Section1Styles}`;
 const Subsection = styled.div`${SubsectionStyles}`;
 const Section2 = styled.section`${Section2Styles}`;
@@ -56,7 +58,7 @@ const MenuView = () => (
                 {headerNavbar}
             </HeaderNavbar>
             <HeaderLogin>
-                <NavLink to={'sign'}>Sign In</NavLink>
+                <NavLink to={'sign'} className={navLinkStyles.nav}><SignInLabel>Sign In</SignInLabel></NavLink>
                 <NavLink to={'started'}><Button>Get started</Button></NavLink>
             </HeaderLogin>
         </Header>

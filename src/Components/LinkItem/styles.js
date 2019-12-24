@@ -10,7 +10,7 @@ export const LinkStyles = css`
     padding-right: 15px;
      
     &:hover {
-        color: ${colors.darkblue};
+        color: ${colors.white};
         text-decoration: underline; 
         cursor: pointer;
     }

@@ -6,5 +6,4 @@ export const MainContainerStyles = css`
     min-width : 1224px;
     border: 3px solid red;
     height: 100%;
-    margin: auto;
 `;
