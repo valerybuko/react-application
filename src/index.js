@@ -1,13 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route } from 'react-router-dom';
-import LoginForm from './Components/LoginForm';
-import App from './App';
+import Routes from './routes/routes';
 
-ReactDOM.render(
-    <BrowserRouter>
-        <Route exact path={'/'} component={App}/>
-        <Route path={'/sign'} component={LoginForm}/>
-        <Route path={'/started'} component={LoginForm}/>
-    </BrowserRouter>, document.getElementById('root'),
-);
+ReactDOM.render(<Routes/>, document.getElementById('root'));
