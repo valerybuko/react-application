@@ -9,3 +9,5 @@ export const imagesURL = [
     id: '_3_uniqueKey', url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSJJSqrs6xKfNYttZ3lxMfoE33G5mKKvL-m7Fjsih0U0FQFWrSU', alt: 'image3', title: 'Image3',
   },
 ];
+
+export const backgroundImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTnm-na2pewpNtcLrmTn7NLeT0e89de8GW5SL6vUYY4V8DqSU2q';
