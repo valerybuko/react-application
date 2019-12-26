@@ -2,11 +2,11 @@ import { css } from 'styled-components';
 import colors from '../../../../themes/colors';
 
 export const Section3Styles = css`
-     box-sizing: border-box;
+     min-width: 215px;
      display: flex;
-     flex-flow: column nowrap;
-     justify-content: flex-start;
+     flex-direction: column;
+     align-items: center;
      background-color: ${colors.gray}
-     padding: 30px;
+     padding: 10px;
      border: 1px solid red;
 `;

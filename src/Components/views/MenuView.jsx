@@ -3,12 +3,12 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MainContainerStyles } from './styles/MainContainer/MainContainer';
 import { HeaderStyles } from './styles/Header/Header';
-import {LogoStyles} from "./styles/Header/Logo";
+import { LogoStyles } from './styles/Header/Logo';
 import { HeaderNavbarStyles } from './styles/Header/HeaderNavbar';
 // eslint-disable-next-line import/named
 import { HeaderLoginStyles } from './styles/Header/HeaderLogin';
 import { Section1Styles } from './styles/Section1/Section1';
-import { SubsectionStyles } from './styles/Section1/Subsection';
+import { Section1ContainerStyles } from './styles/Section1/Section1Container';
 import { Section2Styles } from './styles/Section2/Section2';
 import { Section3Styles } from './styles/Section3/Section3';
 import { FooterStyles } from './styles/Footer/Footer';
@@ -33,7 +33,7 @@ const LogoImage = styled.div`${LogoStyles}`;
 const HeaderNavbar = styled.div`${HeaderNavbarStyles}`;
 const HeaderLogin = styled.div`${HeaderLoginStyles}`;
 const Section1 = styled.section`${Section1Styles}`;
-const Subsection = styled.div`${SubsectionStyles}`;
+const Sectiion1Container = styled.div`${Section1ContainerStyles}`;
 const Section2 = styled.section`${Section2Styles}`;
 const TitleWrapper2 = styled.div`${TitleWrapper2Styles}`;
 const LinkWrapper = styled.div`${LinkWrapperStyles}`;
@@ -66,7 +66,7 @@ const MenuView = () => (
             </HeaderLogin>
         </Header>
         <Section1>
-            <Subsection>
+            <Sectiion1Container>
                 <Title fontSize={'32px'}>Slack replaces email</Title>
                 <Title fontSize={'32px'}>inside your company</Title>
                 {/* eslint-disable-next-line max-len */}
@@ -76,7 +76,7 @@ const MenuView = () => (
                 <LinkItem href={'https://slack.com/intl/en-by/contact-sales?geocode=en-by&from_home=1'}><Button>Contact
                     Sales</Button></LinkItem>
                 <p>Already using Slack?<LinkItem href={'signInURL'}>Sing in</LinkItem></p>
-            </Subsection>
+            </Sectiion1Container>
         </Section1>
         <Section2>
             <TitleWrapper2>

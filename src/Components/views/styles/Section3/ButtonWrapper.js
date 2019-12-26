@@ -1,6 +1,8 @@
 import { css } from 'styled-components';
 
 export const ButtonWrapperStyles = css`
-    display: flex;
-    justify-content: center;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   border: 1px solid blue;
 `;
