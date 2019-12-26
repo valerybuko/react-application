@@ -8,5 +8,10 @@ export const FooterStyles = css`
     justify-content: center;
     background-color: ${colors.darkred};
     padding 20px 0;
-    border: 2px solid red;
+    
+     @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 `;

@@ -12,8 +12,10 @@ export const ButtonStyles = css`
     background-color: ${colors.lilac};
     color: ${colors.white};
     opacity: ${(props) => (props.disabled ? 0.3 : 0.9)};
+    font-size: ${(props) => (props.fontSize ? props.fontSize : '14px')}
     
     &:hover {
         opacity: ${(props) => (props.disabled ? 0.3 : 1)};
+        cursor: pointer;
     }
  `;

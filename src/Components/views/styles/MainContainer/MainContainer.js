@@ -6,5 +6,10 @@ export const MainContainerStyles = css`
     width: 90%;
     height: 100%;
     margin: 0 auto;
-    border: 3px solid red;
+    
+    @media (max-width: 480px) {
+        width: 100%;
+        margin: 0;
+        padding: 0 0 2em;
+    }
 `;

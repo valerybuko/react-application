@@ -2,7 +2,7 @@ import { css } from 'styled-components';
 import colors from '../../themes/colors';
 
 export const LinkStyles = css`
-    color: ${colors.black};
+    color: ${colors.navy};
     text-decoration: none;
     display: inline-block;
     margin: 5px;

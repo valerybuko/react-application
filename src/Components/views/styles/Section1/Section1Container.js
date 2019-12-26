@@ -1,6 +1,14 @@
 import { css } from 'styled-components';
+import colors from '../../../../themes/colors';
 
-export const Section1ContainerStyles = css`
-    flex: 1 0 215px;
-    border: 1px solid blue;
+export const Section1Styles = css`
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     background-color: ${colors.gray};
+     padding: 30px;
+     
+     @media (max-width: 480px) {
+        align-items: center;
+     }
 `;

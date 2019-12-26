@@ -7,5 +7,10 @@ export const HeaderStyles = css`
    justify-content: space-between;
    align-items: center;
    background-color: ${colors.darkred};
-   border: 1px solid red;
+   padding-bottom: 10px;
+   
+   @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+   }
 `;

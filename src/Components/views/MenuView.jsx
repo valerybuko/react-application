@@ -7,8 +7,9 @@ import { LogoStyles } from './styles/Header/Logo';
 import { HeaderNavbarStyles } from './styles/Header/HeaderNavbar';
 // eslint-disable-next-line import/named
 import { HeaderLoginStyles } from './styles/Header/HeaderLogin';
-import { Section1Styles } from './styles/Section1/Section1';
-import { Section1ContainerStyles } from './styles/Section1/Section1Container';
+import { Section1Styles } from './styles/Section1/Section1Container';
+import { ButtonLinkContainerStyles } from './styles/Section1/ButtonLinkContainer';
+import { LinkContainerStyles } from './styles/Section1/LinkContainer';
 import { Section2Styles } from './styles/Section2/Section2';
 import { Section3Styles } from './styles/Section3/Section3';
 import { FooterStyles } from './styles/Footer/Footer';
@@ -27,14 +28,18 @@ import { TitleWrapper3Styles } from './styles/Section3/TitleWrapper3';
 import { ButtonWrapperStyles } from './styles/Section3/ButtonWrapper';
 import navLinkStyles from './styles/Header/NavLink.module.css';
 import { ApplicationStyles } from './styles/Application';
+import colors from '../../themes/colors';
+import { LoginTextStyles } from './styles/Header/LoginText';
 
 const MainContainer = styled.div`${MainContainerStyles}`;
 const Header = styled.div`${HeaderStyles}`;
 const LogoImage = styled.div`${LogoStyles}`;
 const HeaderNavbar = styled.div`${HeaderNavbarStyles}`;
 const HeaderLogin = styled.div`${HeaderLoginStyles}`;
+const LoginText = styled.ins`${LoginTextStyles}`;
 const Section1 = styled.section`${Section1Styles}`;
-const Sectiion1Container = styled.div`${Section1ContainerStyles}`;
+const ButtonLinkContainer = styled.div`${ButtonLinkContainerStyles}`;
+const LinkContainer = styled.ins`${LinkContainerStyles}`;
 const Section2 = styled.section`${Section2Styles}`;
 const TitleWrapper2 = styled.div`${TitleWrapper2Styles}`;
 const LinkWrapper = styled.div`${LinkWrapperStyles}`;
@@ -44,6 +49,13 @@ const ButtonWrapper = styled.div`${ButtonWrapperStyles}`;
 const Footer = styled.div`${FooterStyles}`;
 
 const ApplicationWrapper = styled.div`${ApplicationStyles}`;
+
+const ContactButton = styled(Button)`
+    background-color: ${colors.gray}; 
+    color: ${colors.lilac}; 
+    border: 1px solid ${colors.lilac};
+    font-weight: bold;
+`;
 
 const headerNavbar = linkNavbarData.map((link) => <LinkItem key={link.id} href={link.href}>
     {link.text}
@@ -65,20 +77,22 @@ const MenuView = () => (
                     {headerNavbar}
                 </HeaderNavbar>
                 <HeaderLogin>
-                    <NavLink to={'sign'} className={navLinkStyles.nav}>Sign In</NavLink>
+                    <NavLink to={'sign'} className={navLinkStyles.nav}><LoginText>Sign In</LoginText></NavLink>
                     <NavLink to={'started'}><Button>Get started</Button></NavLink>
                 </HeaderLogin>
             </Header>
             <Section1>
-                <Sectiion1Container>
-                    <Title fontSize={'32px'}>Slack replaces email</Title>
-                    <Title fontSize={'32px'}>inside your company</Title>
-                    {/* eslint-disable-next-line max-len */}
-                    <p>Keep conversations organized in Slack,<br/> the smart alternative to email.</p>
+                <Title fontSize={'32px'}>Slack replaces email</Title>
+                <Title fontSize={'32px'}>inside your company</Title>
+                {/* eslint-disable-next-line max-len */}
+                <Title fontSize={'16px'}>Keep conversations organized in Slack,<br/> the smart alternative to
+                    email.</Title>
+                <ButtonLinkContainer>
                     <NavLink to={'started'}><Button>Try slack</Button></NavLink>
-                    <NavLink to={'started'}><Button>Contact Sales</Button></NavLink>
-                    <p>Already using Slack?<LinkItem href={'signInURL'}>Sing in</LinkItem></p>
-                </Sectiion1Container>
+                    <NavLink to={'started'}><ContactButton>Contact Sales</ContactButton></NavLink>
+                </ButtonLinkContainer>
+                <p>Already using Slack?<LinkContainer><LinkItem href={'signInURL'}>Sing in</LinkItem></LinkContainer>
+                </p>
             </Section1>
             <Section2>
                 <TitleWrapper2>
@@ -128,9 +142,9 @@ const MenuView = () => (
                     <Button>CONTACT SALES</Button>
                 </ButtonWrapper>
             </Section3>
-            <Footer>
-                {footerNavbar}
-            </Footer>
+                <Footer>
+                    {footerNavbar}
+                </Footer>
         </MainContainer>
     </ApplicationWrapper>
 );

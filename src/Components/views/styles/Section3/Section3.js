@@ -8,5 +8,4 @@ export const Section3Styles = css`
      align-items: center;
      background-color: ${colors.gray}
      padding: 10px;
-     border: 1px solid red;
 `;

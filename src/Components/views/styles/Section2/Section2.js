@@ -7,5 +7,4 @@ export const Section2Styles = css`
      align-items: center;
      background-color: ${colors.lilac}
      padding: 30px;
-     border: 1px solid red;
 `;
