@@ -1,3 +1,8 @@
 .nav {
     text-decoration: none;
+    color: black;
+}
+
+.nav:hover {
+    color: white;
 }

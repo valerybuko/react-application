@@ -4,7 +4,7 @@ import colors from '../../../../themes/colors';
 export const Section2Styles = css`   
      box-sizing: border-box;
      display: flex;
-     flex-flow: column nowrap;
+     flex-flow: column wrap;
      justify-content: flex-start;
      background-color: ${colors.lilac}
      padding: 30px;

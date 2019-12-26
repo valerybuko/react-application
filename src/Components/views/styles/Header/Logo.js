@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-export const HeaderNavbarStyles = css`
-    flex: 8 0 150px;
+export const LogoStyles = css`
+    flex: 1;
     border: 1px solid green;
 `;

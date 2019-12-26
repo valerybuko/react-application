@@ -8,7 +8,7 @@ export const ContainerStyles = css`
     border: 1px solid red;
     
     &:hover {
-        width: 310px;
+        width: 320px;
         height: 280px;
     }
 `;
