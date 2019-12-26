@@ -14,3 +14,7 @@ export const linkFooterData = [
 export const logoURL = 'https://slack.com/intl/en-by/';
 export const signInURL = 'https://slack.com/signin';
 export const getStartedURL = 'https://slack.com/get-started#/email';
+
+export const containerImageURL1 = 'https://slackhq.com/work-is-fueled-by-true-engagement?geocode=en-by&utm_source=hppromo&utm_medium=promo';
+export const containerImageURL2 = 'https://slackhq.com/work-is-fueled-by-true-engagement?geocode=en-by&utm_source=hppromo&utm_medium=promo';
+export const containerImageURL3 = 'https://slackhq.com/work-is-fueled-by-true-engagement?geocode=en-by&utm_source=hppromo&utm_medium=promo';

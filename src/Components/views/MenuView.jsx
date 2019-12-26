@@ -15,7 +15,7 @@ import { FooterStyles } from './styles/Footer/Footer';
 import Logo from '../Logo';
 import {
   linkNavbarData,
-  linkFooterData,
+  linkFooterData, containerImageURL1, containerImageURL2, containerImageURL3,
 } from '../../mockdata/linkdata';
 import LinkItem from '../LinkItem';
 import Button from '../Button';
@@ -86,7 +86,7 @@ const MenuView = () => (
                 </TitleWrapper2>
                 <LinkWrapper>
                     <LinkItem
-                        href={'https://slackhq.com/work-is-fueled-by-true-engagement?geocode=en-by&utm_source=hppromo&utm_medium=promo'}>
+                        href={containerImageURL1}>
                         <Container>
                             <img src="https://a.slack-edge.com/b4782/marketing/img/promos/2019-10-10-engagement.jpg"
                                  srcSet="https://a.slack-edge.com/b4782/marketing/img/promos/2019-10-10-engagement.jpg 1x, https://a.slack-edge.com/b4782/marketing/img/promos/2019-10-10-engagement@2x.jpg 2x"
@@ -97,7 +97,7 @@ const MenuView = () => (
                         </Container>
                     </LinkItem>
                     <LinkItem
-                        href={'https://slackhq.com/work-is-fueled-by-true-engagement?geocode=en-by&utm_source=hppromo&utm_medium=promo'}>
+                        href={containerImageURL2}>
                         <Container>
                             <img src="https://a.slack-edge.com/ebeb3/marketing/img/promos/shared-channels-hp-promo.png"
                                  srcSet="https://a.slack-edge.com/ebeb3/marketing/img/promos/shared-channels-hp-promo.png 1x, https://a.slack-edge.com/ebeb3/marketing/img/promos/shared-channels-hp-promo@2x.png 2x"
@@ -107,7 +107,7 @@ const MenuView = () => (
                         </Container>
                     </LinkItem>
                     <LinkItem
-                        href={'https://slackhq.com/work-is-fueled-by-true-engagement?geocode=en-by&utm_source=hppromo&utm_medium=promo'}>
+                        href={containerImageURL3}>
                         <Container>
                             <img
                                 src="https://a.slack-edge.com/80588/marketing/img/promos/gsuite-calendar-email-files.png"
