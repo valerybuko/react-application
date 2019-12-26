@@ -6,7 +6,6 @@ export const Section3Styles = css`
      display: flex;
      flex-flow: column nowrap;
      justify-content: flex-start;
-     max-width: 1224px;
      background-color: ${colors.gray}
      padding: 30px;
      border: 1px solid red;

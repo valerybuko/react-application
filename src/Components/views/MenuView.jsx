@@ -52,74 +52,80 @@ const footerNavbar = linkFooterData.map((link) => <LinkItem key={link.id} href={
 
 const MenuView = () => (
     <MainContainer>
-        <Header>
-            <HeaderNavbar>
-                <NavLink to={'/'}><Logo/></NavLink>
-                {headerNavbar}
-            </HeaderNavbar>
-            <HeaderLogin>
-                <NavLink to={'sign'} className={navLinkStyles.nav}><SignInLabel>Sign In</SignInLabel></NavLink>
-                <NavLink to={'started'}><Button>Get started</Button></NavLink>
-            </HeaderLogin>
-        </Header>
-        <Section1>
-               <Subsection>
-                   <Title fontSize={'32px'}>Slack replaces email</Title>
-                   <Title fontSize={'32px'}>inside your company</Title>
-                   {/* eslint-disable-next-line max-len */}
-                   <p>Keep conversations organized in Slack,<br/> the smart alternative to email.</p>
-                   <LinkItem href={'https://slack.com/intl/en-by/get-started#/email'}><Button>Try slack</Button></LinkItem>
-                   <LinkItem href={'https://slack.com/intl/en-by/contact-sales?geocode=en-by&from_home=1'}><Button>Contact Sales</Button></LinkItem>
-                   <p>Already using Slack?<LinkItem href={'signInURL'}>Sing in</LinkItem></p>
-               </Subsection>
-        </Section1>
-        <Section2>
-            <TitleWrapper2>
-                <Title fontSize={'24px'}> What’s new at Slack</Title>
-            </TitleWrapper2>
-            <LinkWrapper>
-                <LinkItem href={'https://slackhq.com/work-is-fueled-by-true-engagement?geocode=en-by&utm_source=hppromo&utm_medium=promo'}>
-                    <Container>
-                        <img src="https://a.slack-edge.com/b4782/marketing/img/promos/2019-10-10-engagement.jpg"
-                             srcSet="https://a.slack-edge.com/b4782/marketing/img/promos/2019-10-10-engagement.jpg 1x, https://a.slack-edge.com/b4782/marketing/img/promos/2019-10-10-engagement@2x.jpg 2x"
-                             alt="" width={'200px'}/>
-                        {/* eslint-disable-next-line max-len */}
-                        <Title fontSize={'24px'}>Not all Daily Active</Title>
-                        <Title fontSize={'24px'}>Users are created equal: Work is fueled by true engagement</Title>
-                    </Container>
-                </LinkItem>
-                <LinkItem href={'https://slackhq.com/work-is-fueled-by-true-engagement?geocode=en-by&utm_source=hppromo&utm_medium=promo'}>
-                    <Container>
-                        <img src="https://a.slack-edge.com/ebeb3/marketing/img/promos/shared-channels-hp-promo.png"
-                             srcSet="https://a.slack-edge.com/ebeb3/marketing/img/promos/shared-channels-hp-promo.png 1x, https://a.slack-edge.com/ebeb3/marketing/img/promos/shared-channels-hp-promo@2x.png 2x"
-                             alt="" width={'200px'}/>
-                        <Title fontSize={'24px'}>Shared channels: A</Title>
-                        <Title fontSize={'24px'}>better way to work with people outside your company</Title>
-                    </Container>
-                </LinkItem>
-                <LinkItem href={'https://slackhq.com/work-is-fueled-by-true-engagement?geocode=en-by&utm_source=hppromo&utm_medium=promo'}>
-                    <Container>
-                        <img src="https://a.slack-edge.com/80588/marketing/img/promos/gsuite-calendar-email-files.png"
-                             srcSet="https://a.slack-edge.com/80588/marketing/img/promos/gsuite-calendar-email-files.png 1x, https://a.slack-edge.com/80588/marketing/img/promos/gsuite-calendar-email-files@2x.png 2x"
-                             alt="" width={'200px'}/>
-                        {/* eslint-disable-next-line max-len */}
-                        <Title fontSize={'24px'}>Slack and G Suite bring productivity to your everyday work</Title>
-                    </Container>
-                </LinkItem>
-            </LinkWrapper>
-        </Section2>
-        <Section3>
-            <TitleWrapper3>
-                <Title fontSize={'36px'}>Choose a better way to work</Title>
-            </TitleWrapper3>
-            <ButtonWrapper>
-                <Button>TRY SLACK</Button>
-                <Button>CONTACT SALES</Button>
-            </ButtonWrapper>
-        </Section3>
-        <Footer>
-            {footerNavbar}
-        </Footer>
+            <Header>
+                <HeaderNavbar>
+                    <NavLink to={'/'}><Logo/></NavLink>
+                    {headerNavbar}
+                </HeaderNavbar>
+                <HeaderLogin>
+                    <NavLink to={'sign'} className={navLinkStyles.nav}><SignInLabel>Sign In</SignInLabel></NavLink>
+                    <NavLink to={'started'}><Button>Get started</Button></NavLink>
+                </HeaderLogin>
+            </Header>
+            <Section1>
+                <Subsection>
+                    <Title fontSize={'32px'}>Slack replaces email</Title>
+                    <Title fontSize={'32px'}>inside your company</Title>
+                    {/* eslint-disable-next-line max-len */}
+                    <p>Keep conversations organized in Slack,<br/> the smart alternative to email.</p>
+                    <LinkItem href={'https://slack.com/intl/en-by/get-started#/email'}><Button>Try
+                        slack</Button></LinkItem>
+                    <LinkItem href={'https://slack.com/intl/en-by/contact-sales?geocode=en-by&from_home=1'}><Button>Contact
+                        Sales</Button></LinkItem>
+                    <p>Already using Slack?<LinkItem href={'signInURL'}>Sing in</LinkItem></p>
+                </Subsection>
+            </Section1>
+            <Section2>
+                <TitleWrapper2>
+                    <Title fontSize={'24px'}> What’s new at Slack</Title>
+                </TitleWrapper2>
+                <LinkWrapper>
+                    <LinkItem
+                        href={'https://slackhq.com/work-is-fueled-by-true-engagement?geocode=en-by&utm_source=hppromo&utm_medium=promo'}>
+                        <Container>
+                            <img src="https://a.slack-edge.com/b4782/marketing/img/promos/2019-10-10-engagement.jpg"
+                                 srcSet="https://a.slack-edge.com/b4782/marketing/img/promos/2019-10-10-engagement.jpg 1x, https://a.slack-edge.com/b4782/marketing/img/promos/2019-10-10-engagement@2x.jpg 2x"
+                                 alt="" width={'200px'}/>
+                            {/* eslint-disable-next-line max-len */}
+                            <Title fontSize={'24px'}>Not all Daily Active</Title>
+                            <Title fontSize={'24px'}>Users are created equal: Work is fueled by true engagement</Title>
+                        </Container>
+                    </LinkItem>
+                    <LinkItem
+                        href={'https://slackhq.com/work-is-fueled-by-true-engagement?geocode=en-by&utm_source=hppromo&utm_medium=promo'}>
+                        <Container>
+                            <img src="https://a.slack-edge.com/ebeb3/marketing/img/promos/shared-channels-hp-promo.png"
+                                 srcSet="https://a.slack-edge.com/ebeb3/marketing/img/promos/shared-channels-hp-promo.png 1x, https://a.slack-edge.com/ebeb3/marketing/img/promos/shared-channels-hp-promo@2x.png 2x"
+                                 alt="" width={'200px'}/>
+                            <Title fontSize={'24px'}>Shared channels: A</Title>
+                            <Title fontSize={'24px'}>better way to work with people outside your company</Title>
+                        </Container>
+                    </LinkItem>
+                    <LinkItem
+                        href={'https://slackhq.com/work-is-fueled-by-true-engagement?geocode=en-by&utm_source=hppromo&utm_medium=promo'}>
+                        <Container>
+                            <img
+                                src="https://a.slack-edge.com/80588/marketing/img/promos/gsuite-calendar-email-files.png"
+                                srcSet="https://a.slack-edge.com/80588/marketing/img/promos/gsuite-calendar-email-files.png 1x, https://a.slack-edge.com/80588/marketing/img/promos/gsuite-calendar-email-files@2x.png 2x"
+                                alt="" width={'200px'}/>
+                            {/* eslint-disable-next-line max-len */}
+                            <Title fontSize={'24px'}>Slack and G Suite bring productivity to your everyday work</Title>
+                        </Container>
+                    </LinkItem>
+                </LinkWrapper>
+            </Section2>
+            <Section3>
+                <TitleWrapper3>
+                    <Title fontSize={'36px'}>Choose a better way to work</Title>
+                </TitleWrapper3>
+                <ButtonWrapper>
+                    <Button>TRY SLACK</Button>
+                    <Button>CONTACT SALES</Button>
+                </ButtonWrapper>
+            </Section3>
+            <Footer>
+                {footerNavbar}
+            </Footer>
     </MainContainer>
 );
 

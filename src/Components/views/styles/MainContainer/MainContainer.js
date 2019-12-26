@@ -3,7 +3,8 @@ import { css } from 'styled-components';
 export const MainContainerStyles = css`
     display: flex;
     flex-flow: column nowrap;
-    min-width : 1224px;
-    border: 3px solid red;
+    width: 90%;
     height: 100%;
+    margin: 0 auto;
+    border: 3px solid red;
 `;
