@@ -27,7 +27,6 @@ import { LinkWrapperStyles } from './styles/Section2/LinkWrapper';
 import { TitleWrapper3Styles } from './styles/Section3/TitleWrapper3';
 import { ButtonWrapperStyles } from './styles/Section3/ButtonWrapper';
 import navLinkStyles from './styles/Header/NavLink.module.css';
-import { ApplicationStyles } from './styles/Application';
 import colors from '../../themes/colors';
 import { LoginTextStyles } from './styles/Header/LoginText';
 
@@ -48,8 +47,6 @@ const TitleWrapper3 = styled.div`${TitleWrapper3Styles}`;
 const ButtonWrapper = styled.div`${ButtonWrapperStyles}`;
 const Footer = styled.div`${FooterStyles}`;
 
-const ApplicationWrapper = styled.div`${ApplicationStyles}`;
-
 const ContactButton = styled(Button)`
     background-color: ${colors.gray}; 
     color: ${colors.lilac}; 
@@ -65,9 +62,7 @@ const footerNavbar = linkFooterData.map((link) => <LinkItem key={link.id} href={
     {link.text}
 </LinkItem>);
 
-
 const MenuView = () => (
-    <ApplicationWrapper>
         <MainContainer>
             <Header>
                 <LogoImage>
@@ -146,7 +141,6 @@ const MenuView = () => (
                     {footerNavbar}
                 </Footer>
         </MainContainer>
-    </ApplicationWrapper>
 );
 
 export default MenuView;
