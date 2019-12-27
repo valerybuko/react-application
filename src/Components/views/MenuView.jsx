@@ -138,8 +138,8 @@ const MenuView = () => (
                     <Title fontSize={'36px'}>Choose a better way to work</Title>
                 </TitleWrapper3>
                 <ButtonWrapper>
-                    <Button>TRY SLACK</Button>
-                    <Button>CONTACT SALES</Button>
+                    <NavLink to={'try-slack'} className={navLinkStyles.nav}><Button>TRY SLACK</Button></NavLink>
+                    <NavLink to={'contact-sales'} className={navLinkStyles.nav}><Button>CONTACT SALES</Button></NavLink>
                 </ButtonWrapper>
             </Section3>
                 <Footer>

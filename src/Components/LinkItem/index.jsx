@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { LinkStyles } from './styles';
+import { LinkStyles } from './style';
 
 const LinkItem = styled.a`
   ${LinkStyles}

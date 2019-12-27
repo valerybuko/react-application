@@ -11,3 +11,5 @@ export const imagesURL = [
 ];
 
 export const backgroundImage = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTnm-na2pewpNtcLrmTn7NLeT0e89de8GW5SL6vUYY4V8DqSU2q';
+
+export const wrongWayImageURL = 'https://images-na.ssl-images-amazon.com/images/I/61floal7hOL._SX522_.jpg';
