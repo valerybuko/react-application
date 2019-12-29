@@ -4,7 +4,6 @@ module.exports = {
         "es6": true,
         "node": true,
     },
-    "extends": "airbnb-base",
     "extends": [
         "airbnb-base",
         'plugin:react/recommended'
@@ -25,6 +24,14 @@ module.exports = {
     ],
     "rules": {
         "import/prefer-default-export": "off",
-        "linebreak-style": ["error", process.env.NODE_ENV === 'prod' ? "unix" : "windows"]
+        "linebreak-style": ["error", process.env.NODE_ENV === 'prod' ? "unix" : "windows"],
+        "import/no-named-as-default": 0
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
     }
 };
