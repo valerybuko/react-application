@@ -25,7 +25,8 @@ module.exports = {
     "rules": {
         "import/prefer-default-export": "off",
         "linebreak-style": ["error", process.env.NODE_ENV === 'prod' ? "unix" : "windows"],
-        "import/no-named-as-default": 0
+        "import/no-named-as-default": 0,
+        "react/prop-types": [2, { ignore: ['children'] }]
     },
     "settings": {
         "import/resolver": {
