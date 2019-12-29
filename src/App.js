@@ -1,9 +1,12 @@
 import React from 'react';
-
+import { BrowserRouter } from 'react-router-dom';
+import Layout from './Components/Layout';
 
 const App = () => (
-    <div>
-    </div>
+    <Layout>
+        <BrowserRouter>
+        </BrowserRouter>
+    </Layout>
 );
 
 export default App;
