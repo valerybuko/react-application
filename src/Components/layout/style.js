@@ -1,8 +1,11 @@
 import { css } from 'styled-components';
 import { defaultFonts } from '../../themes/fonts';
 
-export const ApplicationStyles = css`
-    padding: 0;
+export const LayoutStyles = css`
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
     margin: 0;
-    font-family: ${defaultFonts.fontFamilyDefaultTitle}
+    padding: 0;
+    font-size: ${defaultFonts.bodyFontSize};
 `;
