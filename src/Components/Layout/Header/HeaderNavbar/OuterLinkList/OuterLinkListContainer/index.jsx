@@ -5,13 +5,15 @@ import { OuterLinkListStyles } from '../style';
 const OuterLinkListComponent = styled.li`${OuterLinkListStyles}`;
 
 const OuterLinkListContainer = (props) => {
-  const [displayValue, setDisplayValue] = useState('none');
+  const [isVisible, setIsVisible] = useState(false);
   const handleMouseEnter = () => {
-    setDisplayValue('block');
+    setIsVisible(true);
   };
   return (
           <OuterLinkListComponent onMouseEnter={handleMouseEnter}>
-              {props.children}
+            {
+              (isVisible) ? props.children : null
+            }
           </OuterLinkListComponent>
   );
 };
