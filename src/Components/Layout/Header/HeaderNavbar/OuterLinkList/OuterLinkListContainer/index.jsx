@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { OuterLinkListStyles } from '../style';
+import LinkItem from '../../../../../LinkItem';
 
 const OuterLinkListComponent = styled.li`${OuterLinkListStyles}`;
 
@@ -11,6 +12,7 @@ const OuterLinkListContainer = (props) => {
   };
   return (
           <OuterLinkListComponent onMouseEnter={handleMouseEnter}>
+            <LinkItem title={props.title}/>
             {
               (isVisible) ? props.children : null
             }

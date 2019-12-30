@@ -6,9 +6,7 @@ import OuterLinkListContainer from './OuterLinkListContainer';
 
 const OuterLinkList = () => (
   <>
-            <OuterLinkListContainer>
-                <LinkItem>
-                    Why Slack
+            <OuterLinkListContainer title={'Why Slack?'}>
                     <InnerLinkList>
                         <InnerLink>
                             <LinkItem href={'https://slack.com/intl/en-by/features'}>How it works</LinkItem>
@@ -20,11 +18,8 @@ const OuterLinkList = () => (
                             <LinkItem href={'https://slack.com/intl/en-by/customer-stories'}>Customers</LinkItem>
                         </InnerLink>
                     </InnerLinkList>
-                </LinkItem>
             </OuterLinkListContainer>
-            <OuterLinkListContainer>
-                <LinkItem>
-                    Solutions
+            <OuterLinkListContainer title={'Solutions'}>
                     <InnerLinkList>
                         <InnerLink>
                             <LinkItem href={'https://slack.com/intl/en-by/solutions/engineering'}>Engineering</LinkItem>
@@ -60,11 +55,8 @@ const OuterLinkList = () => (
                             <LinkItem href={'https://slack.com/intl/en-by/solutions/media'}>Media</LinkItem>
                         </InnerLink>
                     </InnerLinkList>
-                </LinkItem>
             </OuterLinkListContainer>
-            <OuterLinkListContainer>
-                <LinkItem>
-                    Resourses
+            <OuterLinkListContainer title={'Resourses'}>
                     <InnerLinkList>
                         <InnerLink>
                             <LinkItem href={'https://slack.com/intl/en-by/events/webinars'}>Webinars</LinkItem>
@@ -85,7 +77,6 @@ const OuterLinkList = () => (
                             <LinkItem href={'https://slack.com/intl/en-by/downloads/windows'}>Download</LinkItem>
                         </InnerLink>
                     </InnerLinkList>
-                </LinkItem>
             </OuterLinkListContainer>
   </>
 );
