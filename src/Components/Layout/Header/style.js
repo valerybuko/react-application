@@ -6,5 +6,7 @@ export const HeaderStyles = css`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 1260px;
+    margin: 0 auto;
     border: 1px solid darkblue;
 `;
