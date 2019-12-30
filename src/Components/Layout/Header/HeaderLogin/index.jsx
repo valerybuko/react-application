@@ -9,7 +9,7 @@ const HeaderLoginComponent = styled.div(HeaderLoginComponentStyles);
 
 const HeaderLogin = () => (
     <HeaderLoginComponent>
-        <NavLink to='/sign-in'><LinkItem>How it works</LinkItem></NavLink>
+        <NavLink to='/sign-in'><LinkItem>Sign In</LinkItem></NavLink>
         <NavLink to='login'><Button>GET STARTED</Button></NavLink>
     </HeaderLoginComponent>
 );

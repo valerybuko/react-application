@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { OuterLinkListStyles } from '../style';
 import LinkItem from '../../../../../LinkItem';
+import InnerLinkList from '../InnerLinkList';
 
 const OuterLinkListComponent = styled.li`${OuterLinkListStyles}`;
 
@@ -10,12 +11,17 @@ const OuterLinkListContainer = (props) => {
   const handleMouseEnter = () => {
     setIsVisible(true);
   };
+  const handleMouseLeave = () => {
+    setIsVisible(false);
+  };
   return (
           <OuterLinkListComponent onMouseEnter={handleMouseEnter}>
             <LinkItem title={props.title}/>
+            <InnerLinkList onMouseLeave={handleMouseLeave}>
             {
               (isVisible) ? props.children : null
             }
+            </InnerLinkList>
           </OuterLinkListComponent>
   );
 };

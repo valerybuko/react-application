@@ -7,7 +7,6 @@ import OuterLinkListContainer from './OuterLinkListContainer';
 const OuterLinkList = () => (
   <>
             <OuterLinkListContainer title={'Why Slack?'}>
-                    <InnerLinkList>
                         <InnerLink>
                             <LinkItem href={'https://slack.com/intl/en-by/features'}>How it works</LinkItem>
                         </InnerLink>
@@ -17,10 +16,8 @@ const OuterLinkList = () => (
                         <InnerLink>
                             <LinkItem href={'https://slack.com/intl/en-by/customer-stories'}>Customers</LinkItem>
                         </InnerLink>
-                    </InnerLinkList>
             </OuterLinkListContainer>
             <OuterLinkListContainer title={'Solutions'}>
-                    <InnerLinkList>
                         <InnerLink>
                             <LinkItem href={'https://slack.com/intl/en-by/solutions/engineering'}>Engineering</LinkItem>
                         </InnerLink>
@@ -54,10 +51,8 @@ const OuterLinkList = () => (
                         <InnerLink>
                             <LinkItem href={'https://slack.com/intl/en-by/solutions/media'}>Media</LinkItem>
                         </InnerLink>
-                    </InnerLinkList>
             </OuterLinkListContainer>
             <OuterLinkListContainer title={'Resourses'}>
-                    <InnerLinkList>
                         <InnerLink>
                             <LinkItem href={'https://slack.com/intl/en-by/events/webinars'}>Webinars</LinkItem>
                         </InnerLink>
@@ -76,7 +71,6 @@ const OuterLinkList = () => (
                         <InnerLink>
                             <LinkItem href={'https://slack.com/intl/en-by/downloads/windows'}>Download</LinkItem>
                         </InnerLink>
-                    </InnerLinkList>
             </OuterLinkListContainer>
   </>
 );
