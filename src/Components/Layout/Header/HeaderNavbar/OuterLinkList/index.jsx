@@ -1,26 +1,15 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { OuterLinkListStyles } from './style';
+import React from 'react';
 import InnerLinkList from './InnerLinkList';
 import InnerLink from './InnerLinkList/InnerLink';
 import LinkItem from '../../../../LinkItem';
+import OuterLinkListContainer from './OuterLinkListContainer';
 
-const OuterLinkListComponent = styled.li`${OuterLinkListStyles}`;
-
-const OuterLinkList = () => {
-  const [displayValue, setDisplayValue] = useState('none');
-  const handleMouseEnter = () => {
-    setDisplayValue('block');
-  };
-  const handleMouseLeave = () => {
-    setDisplayValue('none');
-  };
-  return (
-    <>
-            <OuterLinkListComponent onMouseEnter={handleMouseEnter}>
+const OuterLinkList = () => (
+  <>
+            <OuterLinkListContainer>
                 <LinkItem>
                     Why Slack
-                    <InnerLinkList displayValue={displayValue} onMouseLeave={handleMouseLeave}>
+                    <InnerLinkList>
                         <InnerLink>
                             <LinkItem href={'https://slack.com/intl/en-by/features'}>How it works</LinkItem>
                         </InnerLink>
@@ -32,11 +21,11 @@ const OuterLinkList = () => {
                         </InnerLink>
                     </InnerLinkList>
                 </LinkItem>
-            </OuterLinkListComponent>
-            <OuterLinkListComponent onMouseEnter={handleMouseEnter}>
+            </OuterLinkListContainer>
+            <OuterLinkListContainer>
                 <LinkItem>
                     Solutions
-                    <InnerLinkList displayValue={displayValue} onMouseLeave={handleMouseLeave}>
+                    <InnerLinkList>
                         <InnerLink>
                             <LinkItem href={'https://slack.com/intl/en-by/solutions/engineering'}>Engineering</LinkItem>
                         </InnerLink>
@@ -72,11 +61,11 @@ const OuterLinkList = () => {
                         </InnerLink>
                     </InnerLinkList>
                 </LinkItem>
-            </OuterLinkListComponent>
-            <OuterLinkListComponent onMouseEnter={handleMouseEnter}>
+            </OuterLinkListContainer>
+            <OuterLinkListContainer>
                 <LinkItem>
                     Resourses
-                    <InnerLinkList displayValue={displayValue} onMouseLeave={handleMouseLeave}>
+                    <InnerLinkList>
                         <InnerLink>
                             <LinkItem href={'https://slack.com/intl/en-by/events/webinars'}>Webinars</LinkItem>
                         </InnerLink>
@@ -97,9 +86,7 @@ const OuterLinkList = () => {
                         </InnerLink>
                     </InnerLinkList>
                 </LinkItem>
-            </OuterLinkListComponent>
-    </>
-  );
-};
-
+            </OuterLinkListContainer>
+  </>
+);
 export default OuterLinkList;

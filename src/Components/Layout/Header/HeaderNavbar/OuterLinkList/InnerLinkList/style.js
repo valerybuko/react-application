@@ -4,6 +4,6 @@ export const InnerLinkListStyles = css`
     position: absolute;
     top: 10;
     right: 0;
-    display: ${(props) => props.displayValue};
+    display: block;
     background-color: white;
 `;
