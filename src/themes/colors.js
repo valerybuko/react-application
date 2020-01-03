@@ -3,4 +3,6 @@ export default {
   white: '#fff',
   black: '#000',
   darkblue: '#1264a3',
+  gray: '#696969',
+  darkgray: '#454545',
 };
