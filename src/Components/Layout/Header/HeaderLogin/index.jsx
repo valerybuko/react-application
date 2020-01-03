@@ -4,8 +4,16 @@ import { NavLink } from 'react-router-dom';
 import { HeaderLoginComponentStyles } from './style';
 import Button from '../../../Button';
 import colors from '../../../../themes/colors';
+import { defaultFonts } from '../../../../themes/fonts';
 
 const HeaderLoginComponent = styled.div(HeaderLoginComponentStyles);
+
+const LoginButton = styled(Button)`
+    width: 136px;
+    height: 43px;
+    padding: 0;
+    font-weight: ${defaultFonts.fontWeightBold}
+`;
 
 const LoginLinkItem = styled.a`
     color: ${colors.black};
@@ -28,7 +36,7 @@ const LoginLinkItem = styled.a`
 const HeaderLogin = () => (
     <HeaderLoginComponent>
         <NavLink to='/sign-in'><LoginLinkItem>Sign In</LoginLinkItem></NavLink>
-        <NavLink to='login'><Button>GET STARTED</Button></NavLink>
+        <NavLink to='login'><LoginButton>GET STARTED</LoginButton></NavLink>
     </HeaderLoginComponent>
 );
 
