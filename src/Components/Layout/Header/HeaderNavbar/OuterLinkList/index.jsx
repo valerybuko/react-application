@@ -1,5 +1,4 @@
 import React from 'react';
-import InnerLinkList from './InnerLinkList';
 import InnerLink from './InnerLinkList/InnerLink';
 import LinkItem from '../../../../LinkItem';
 import OuterLinkListContainer from './OuterLinkListContainer';
