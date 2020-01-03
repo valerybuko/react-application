@@ -1,74 +1,89 @@
 import React from 'react';
+import styled from 'styled-components';
 import InnerLink from './InnerLinkList/InnerLink';
 import LinkItem from '../../../../LinkItem';
 import OuterLinkListContainer from './OuterLinkListContainer';
+import colors from '../../../../../themes/colors';
+
+const InnerLinkItem = styled.a`
+    color: ${colors.black};
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    padding: 0 10px;
+    border: none;
+     
+    &:hover {
+        color: ${colors.darkblue};
+        text-decoration: underline; 
+        cursor: pointer;
+    }
+    
+    &:active {
+        border: none;
+    }
+`;
 
 const OuterLinkList = () => (
   <>
             <OuterLinkListContainer title={'Why Slack?'}>
                         <InnerLink>
-                            <LinkItem href={'https://slack.com/intl/en-by/features'}>How it works</LinkItem>
+                            <InnerLinkItem href={'https://slack.com/intl/en-by/features'}>How it works</InnerLinkItem>
                         </InnerLink>
                         <InnerLink>
-                            <LinkItem href={'https://slack.com/intl/en-by/security'}>Security</LinkItem>
+                            <InnerLinkItem href={'https://slack.com/intl/en-by/security'}>Security</InnerLinkItem>
                         </InnerLink>
                         <InnerLink>
-                            <LinkItem href={'https://slack.com/intl/en-by/customer-stories'}>Customers</LinkItem>
+                            <InnerLinkItem href={'https://slack.com/intl/en-by/customer-stories'}>Customers</InnerLinkItem>
                         </InnerLink>
             </OuterLinkListContainer>
             <OuterLinkListContainer title={'Solutions'}>
                         <InnerLink>
-                            <LinkItem href={'https://slack.com/intl/en-by/solutions/engineering'}>Engineering</LinkItem>
+                            <InnerLinkItem href={'https://slack.com/intl/en-by/solutions/engineering'}>Engineering</InnerLinkItem>
                         </InnerLink>
                         <InnerLink>
-                            <LinkItem href={'https://slack.com/intl/en-by/solutions/financial-services'}>Financial
-                                Services</LinkItem>
+                            <InnerLinkItem href={'https://slack.com/intl/en-by/solutions/financial-services'}>Financial Services</InnerLinkItem>
                         </InnerLink>
                         <InnerLink>
-                            <LinkItem
-                                href={'https://slack.com/intl/en-by/solutions/sales'}>Sales</LinkItem>
+                            <InnerLinkItem href={'https://slack.com/intl/en-by/solutions/sales'}>Sales</InnerLinkItem>
                         </InnerLink>
                         <InnerLink>
-                            <LinkItem
-                                href={'https://slack.com/intl/en-by/solutions/information-technology'}>IT</LinkItem>
+                            <InnerLinkItem href={'https://slack.com/intl/en-by/solutions/information-technology'}>IT</InnerLinkItem>
                         </InnerLink>
                         <InnerLink>
-                            <LinkItem href={'https://slack.com/intl/en-by/solutions/marketing'}>Marketing</LinkItem>
+                            <InnerLinkItem href={'https://slack.com/intl/en-by/solutions/marketing'}>Marketing</InnerLinkItem>
                         </InnerLink>
                         <InnerLink>
-                            <LinkItem href={'https://slack.com/intl/en-by/solutions/customer-support'}>Customer
-                                Support</LinkItem>
+                            <InnerLinkItem href={'https://slack.com/intl/en-by/solutions/customer-support'}>Customer Support</InnerLinkItem>
                         </InnerLink>
                         <InnerLink>
-                            <LinkItem href={'https://slack.com/intl/en-by/solutions/human-resources'}>Human
-                                Resources</LinkItem>
+                            <InnerLinkItem href={'https://slack.com/intl/en-by/solutions/human-resources'}>Human Resources</InnerLinkItem>
                         </InnerLink>
                         <InnerLink>
-                            <LinkItem href={'https://slack.com/intl/en-by/solutions/project-management'}>Project
-                                Management</LinkItem>
+                            <InnerLinkItem href={'https://slack.com/intl/en-by/solutions/project-management'}>Project Management</InnerLinkItem>
                         </InnerLink>
                         <InnerLink>
-                            <LinkItem href={'https://slack.com/intl/en-by/solutions/media'}>Media</LinkItem>
+                            <InnerLinkItem href={'https://slack.com/intl/en-by/solutions/media'}>Media</InnerLinkItem>
                         </InnerLink>
             </OuterLinkListContainer>
             <OuterLinkListContainer title={'Resourses'}>
                         <InnerLink>
-                            <LinkItem href={'https://slack.com/intl/en-by/events/webinars'}>Webinars</LinkItem>
+                            <InnerLinkItem href={'https://slack.com/intl/en-by/events/webinars'}>Webinars</InnerLinkItem>
                         </InnerLink>
                         <InnerLink>
-                            <LinkItem href={'https://www.slackcertified.com/'}>Slack Certified Program</LinkItem>
+                            <InnerLinkItem href={'https://www.slackcertified.com/'}>Slack Certified Program</InnerLinkItem>
                         </InnerLink>
                         <InnerLink>
-                            <LinkItem href={'https://slack.com/intl/en-by/help'}>Help Center</LinkItem>
+                            <InnerLinkItem href={'https://slack.com/intl/en-by/help'}>Help Center</InnerLinkItem>
                         </InnerLink>
                         <InnerLink>
-                            <LinkItem href={'https://api.slack.com/'}>API</LinkItem>
+                            <InnerLinkItem href={'https://api.slack.com/'}>API</InnerLinkItem>
                         </InnerLink>
                         <InnerLink>
-                            <LinkItem href={'https://slack.com/intl/en-by/apps'}>App Directory</LinkItem>
+                            <InnerLinkItem href={'https://slack.com/intl/en-by/apps'}>App Directory</InnerLinkItem>
                         </InnerLink>
                         <InnerLink>
-                            <LinkItem href={'https://slack.com/intl/en-by/downloads/windows'}>Download</LinkItem>
+                            <InnerLinkItem href={'https://slack.com/intl/en-by/downloads/windows'}>Download</InnerLinkItem>
                         </InnerLink>
             </OuterLinkListContainer>
   </>
