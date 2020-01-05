@@ -7,4 +7,5 @@ export const InnerLinkListStyles = css`
     display: block;
     background-color: white;
     margin-top: 25px;
+    padding-left: 0;
 `;
