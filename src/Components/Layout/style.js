@@ -5,6 +5,7 @@ export const LayoutStyles = css`
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
+    max-width: 1260px;
     margin: 0 auto;
     padding: 0;
     font-family: ${defaultFonts.fontFamilyDefaultTitle}
