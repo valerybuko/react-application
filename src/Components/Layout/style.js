@@ -7,5 +7,6 @@ export const LayoutStyles = css`
     min-height: 100vh; 
     margin: 0;
     padding: 0;
+    font-family: ${defaultFonts.fontFamilyDefaultTitle}
     font-size: ${defaultFonts.bodyFontSize};
 `;

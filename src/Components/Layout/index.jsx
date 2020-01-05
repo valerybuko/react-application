@@ -6,7 +6,7 @@ import Content from './Content';
 import Footer from './Footer';
 
 
-const LayoutComponent = styled.body`${LayoutStyles}`;
+const LayoutComponent = styled.div`${LayoutStyles}`;
 
 const Layout = (props) => (
     <LayoutComponent>
