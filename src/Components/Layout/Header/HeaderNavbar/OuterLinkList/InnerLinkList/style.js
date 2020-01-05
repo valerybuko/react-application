@@ -6,4 +6,5 @@ export const InnerLinkListStyles = css`
     left: 0;
     display: block;
     background-color: white;
+    margin-top: 25px;
 `;
