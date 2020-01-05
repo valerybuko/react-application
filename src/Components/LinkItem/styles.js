@@ -16,7 +16,6 @@ export const LinkStyles = css`
     
     &:active {
         border: 2px dotted ${colors.lilac};
-        padding: 15px;
         text-decoration: none;
     }
 `;
