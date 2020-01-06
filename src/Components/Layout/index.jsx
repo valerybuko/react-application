@@ -11,7 +11,6 @@ const LayoutComponent = styled.div`${LayoutStyles}`;
 
 const Layout = (props) => {
   const [initialState, setInitialState] = useState(false);
-  console.log(initialState);
   return (
         <LayoutComponent>
             <Header headerMenuHamburgerStare={initialState} setHeaderMenuHamburgerStare={setInitialState}/>
