@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import InnerLink from './InnerLinkList/InnerLink';
-import LinkItem from '../../../../LinkItem';
 import OuterLinkListContainer from './OuterLinkListContainer';
 import colors from '../../../../../themes/colors';
 

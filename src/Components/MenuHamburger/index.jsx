@@ -6,10 +6,14 @@ export const MenuHamburgerWrapper = styled.div`
     display: none;
     
     @media (max-width: 1065px) {
-        display: block;   
+        display: block;
+        
+        &:hover {
+            cursor: pointer;
+        } 
     }
 `;
 
-const MenuHamburger = () => <MenuHamburgerSVG/>;
+const MenuHamburgerImage = () => <MenuHamburgerSVG/>;
 
-export default MenuHamburger;
+export default MenuHamburgerImage;

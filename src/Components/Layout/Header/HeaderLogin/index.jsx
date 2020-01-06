@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { HeaderLoginComponentStyles } from './style';
 import Button from '../../../Button';
 import colors from '../../../../themes/colors';
 import { defaultFonts } from '../../../../themes/fonts';
-import MenuHamburger, { MenuHamburgerWrapper } from '../../../MenuHamburger';
+import MenuHamburgerImage, { MenuHamburgerWrapper } from '../../../MenuHamburger';
+import CloseMenu from '../../../CloseMenu';
 
 const HeaderLoginComponent = styled.div(HeaderLoginComponentStyles);
 
@@ -40,16 +41,26 @@ const HeaderLoginWrapper = styled.span`
     }
 `;
 
-const HeaderLogin = () => (
+const HeaderLogin = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleGamburgerMenuClick = (e) => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
         <HeaderLoginComponent>
             <HeaderLoginWrapper>
                 <NavLink to='/sign-in'><LoginLinkItem>Sign In</LoginLinkItem></NavLink>
                 <NavLink to='login'><LoginButton>GET STARTED</LoginButton></NavLink>
             </HeaderLoginWrapper>
-            <MenuHamburgerWrapper>
-                <MenuHamburger/>
+            <MenuHamburgerWrapper onClick={handleGamburgerMenuClick}>
+                {
+                    isMenuOpen ? <CloseMenu/> : <MenuHamburgerImage />
+                }
             </MenuHamburgerWrapper>
         </HeaderLoginComponent>
-);
+  );
+};
 
 export default HeaderLogin;
