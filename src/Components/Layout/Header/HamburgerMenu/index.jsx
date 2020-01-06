@@ -25,7 +25,7 @@ const LinkList = styled.ul`
 `;
 
 const LinkItem = styled.li`
-    padding: 60px 0;
+    padding: 20px 0;
 `;
 
 const OuterHamburgerMenuLink = styled.a`
@@ -37,6 +37,14 @@ const OuterHamburgerMenuLink = styled.a`
         color: ${colors.darkblue_experssed};
         cursor: pointer;
         text-decoration: underline;
+    }
+`;
+
+const OuterHamburgerMenuComposeLink = styled(OuterHamburgerMenuLink)`
+     &:hover {
+        color: ${colors.gray};
+        cursor: pointer;
+        text-decoration: none;
     }
 `;
 
@@ -88,6 +96,18 @@ const DropDownLink = styled.div`
     position: relative;
 `;
 
+const InnerLinkList = styled.ul`
+    position: absolute;
+    left: 0;
+    top: 20px;
+    margin-left: -25px;
+    list-style-type: none;
+`;
+
+const InnerLinkItemWpapper = styled.li`
+    padding: 5px 0;
+`;
+
 const HamburgerMenu = (props) => {
   const [dropDownLinkState1, setDropDownLinkState1] = useState(false);
 
@@ -114,26 +134,77 @@ const HamburgerMenu = (props) => {
                     <OuterHamburgerMenuLink href={'https://slack.com/intl/en-by/features'}> Why Slack?</OuterHamburgerMenuLink>
                 </LinkItem>
                 <LinkItem>
-                    <OuterHamburgerMenuLink>
+                    <OuterHamburgerMenuComposeLink>
                         <DropDownLink onClick={handleLinkPointerClick1} dropDownLinkState={dropDownLinkState1}>
                             Solutions
-                            <ul>
-                                <li></li>
-                            </ul>
+                            {
+                                dropDownLinkState1
+                                  ? <InnerLinkList>
+                                        <InnerLinkItemWpapper>
+                                            <OuterHamburgerMenuLink href="https://slack.com/intl/en-by/solutions/engineering">Engineering</OuterHamburgerMenuLink>
+                                        </InnerLinkItemWpapper>
+                                        <InnerLinkItemWpapper>
+                                            <OuterHamburgerMenuLink href="https://slack.com/intl/en-by/solutions/financial-services">Financial Services</OuterHamburgerMenuLink>
+                                        </InnerLinkItemWpapper>
+                                        <InnerLinkItemWpapper>
+                                            <OuterHamburgerMenuLink href="https://slack.com/intl/en-by/solutions/information-technology">IT</OuterHamburgerMenuLink>
+                                        </InnerLinkItemWpapper>
+                                        <InnerLinkItemWpapper>
+                                            <OuterHamburgerMenuLink href="https://slack.com/intl/en-by/solutions/customer-support">Customer Support</OuterHamburgerMenuLink>
+                                        </InnerLinkItemWpapper>
+                                        <InnerLinkItemWpapper>
+                                            <OuterHamburgerMenuLink href="https://slack.com/intl/en-by/solutions/project-management">Project Management</OuterHamburgerMenuLink>
+                                        </InnerLinkItemWpapper>
+                                        <InnerLinkItemWpapper>
+                                            <OuterHamburgerMenuLink href="https://slack.com/intl/en-by/solutions/sales">Sales</OuterHamburgerMenuLink>
+                                        </InnerLinkItemWpapper>
+                                        <InnerLinkItemWpapper>
+                                            <OuterHamburgerMenuLink href="https://slack.com/intl/en-by/solutions/marketing">Marketing</OuterHamburgerMenuLink>
+                                        </InnerLinkItemWpapper>
+                                        <InnerLinkItemWpapper>
+                                            <OuterHamburgerMenuLink href="https://slack.com/intl/en-by/solutions/human-resources">Human Resources</OuterHamburgerMenuLink>
+                                        </InnerLinkItemWpapper>
+                                        <InnerLinkItemWpapper>
+                                            <OuterHamburgerMenuLink href="https://slack.com/intl/en-by/solutions/media">Media</OuterHamburgerMenuLink>
+                                        </InnerLinkItemWpapper>
+                                    </InnerLinkList>
+                                  : null
+                            }
                             <NextPointer pointerState={dropDownLinkState1}/>
                         </DropDownLink>
-                    </OuterHamburgerMenuLink>
+                    </OuterHamburgerMenuComposeLink>
                 </LinkItem>
                 <LinkItem>
-                    <OuterHamburgerMenuLink>
+                    <OuterHamburgerMenuComposeLink>
                         <DropDownLink onClick={handleLinkPointerClick2} dropDownLinkState={dropDownLinkState2}>
                             Resourses
-                            <ul>
-                                <li></li>
-                            </ul>
+                            {
+                                dropDownLinkState2
+                                  ? <InnerLinkList>
+                                        <InnerLinkItemWpapper>
+                                            <OuterHamburgerMenuLink href="https://slack.com/intl/en-by/events/webinars">Webinars</OuterHamburgerMenuLink>
+                                        </InnerLinkItemWpapper>
+                                        <InnerLinkItemWpapper>
+                                            <OuterHamburgerMenuLink href="https://www.slackcertified.com/">Slack Certified Program</OuterHamburgerMenuLink>
+                                        </InnerLinkItemWpapper>
+                                        <InnerLinkItemWpapper>
+                                            <OuterHamburgerMenuLink href="https://slack.com/intl/en-by/help">Help Center</OuterHamburgerMenuLink>
+                                        </InnerLinkItemWpapper>
+                                        <InnerLinkItemWpapper>
+                                            <OuterHamburgerMenuLink href="https://api.slack.com/">API</OuterHamburgerMenuLink>
+                                        </InnerLinkItemWpapper>
+                                        <InnerLinkItemWpapper>
+                                            <OuterHamburgerMenuLink href="https://slack.com/intl/en-by/apps">App Directory</OuterHamburgerMenuLink>
+                                        </InnerLinkItemWpapper>
+                                        <InnerLinkItemWpapper>
+                                            <OuterHamburgerMenuLink href="https://slack.com/intl/en-by/downloads/windows">Download</OuterHamburgerMenuLink>
+                                        </InnerLinkItemWpapper>
+                                    </InnerLinkList>
+                                  : null
+                            }
                             <NextPointer pointerState={dropDownLinkState2}/>
                         </DropDownLink>
-                    </OuterHamburgerMenuLink>
+                    </OuterHamburgerMenuComposeLink>
                 </LinkItem>
                 <LinkItem>
                     <OuterHamburgerMenuLink href={'https://slack.com/intl/en-by/pricing'}>Pricing</OuterHamburgerMenuLink>
