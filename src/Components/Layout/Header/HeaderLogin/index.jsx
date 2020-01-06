@@ -41,11 +41,12 @@ const HeaderLoginWrapper = styled.span`
     }
 `;
 
-const HeaderLogin = () => {
+const HeaderLogin = (props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleGamburgerMenuClick = (e) => {
     setIsMenuOpen(!isMenuOpen);
+    props.setHeaderMenuHamburgerStare(!props.headerMenuHamburgerStare);
   };
 
   return (

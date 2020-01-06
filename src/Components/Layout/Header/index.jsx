@@ -8,11 +8,14 @@ import HeaderLogin from './HeaderLogin';
 
 const HeaderComponent = styled.header`${HeaderStyles}`;
 
-const Header = () => (
+const Header = (props) => (
     <HeaderComponent>
         <HeaderLogo/>
         <HeaderNavbar/>
-        <HeaderLogin/>
+        <HeaderLogin
+            headerMenuHamburgerStare={props.headerMenuHamburgerStare}
+            setHeaderMenuHamburgerStare={props.setHeaderMenuHamburgerStare}
+        />
     </HeaderComponent>
 );
 
