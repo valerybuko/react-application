@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FooterLogoContainerStyles } from './style';
-import FooterLogo from './FooterLogo';
+import FooterLogo from '../FooterLogo';
 
 const FooterLogoContainerComponent = styled.div`${FooterLogoContainerStyles}`;
 
