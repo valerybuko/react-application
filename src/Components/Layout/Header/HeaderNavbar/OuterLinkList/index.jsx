@@ -4,7 +4,7 @@ import InnerLink from './InnerLinkList/InnerLink';
 import OuterLinkListContainer from './OuterLinkListContainer';
 import colors from '../../../../../themes/colors';
 
-const InnerLinkItem = styled.a`
+export const InnerLinkItem = styled.a`
     color: ${colors.black};
     text-decoration: none;
     display: inline-block;
