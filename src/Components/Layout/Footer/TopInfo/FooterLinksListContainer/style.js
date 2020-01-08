@@ -7,7 +7,6 @@ export const FooterLinkListContainerStyles = css`
     justify-content: center;
     padding: 10px;
     font-size: ${defaultFonts.footerFontSize}
-    border: 1px solid red;
     
     @media (max-width: 1005px) {
         justify-content: flex-start;

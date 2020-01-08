@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {FooterLinkListContainerStyles} from './style';
+import { FooterLinkListContainerStyles } from './style';
 import FooterLinkList from './FooterLinkList';
 import LinkItem from '../../../../LinkItem';
 import colors from '../../../../../themes/colors';
