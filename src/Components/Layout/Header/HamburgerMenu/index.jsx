@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Logo from '../../../Logo';
-import CloseMenu from '../../../CloseMenu';
 import Button from '../../../Button';
 import colors from '../../../../themes/colors';
 import { defaultFonts } from '../../../../themes/fonts';
@@ -11,13 +9,6 @@ const HamburgerMenuWrapper = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-`;
-
-const LogoPartWrapper = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 15px 0 0 40px;
 `;
 
 const LinkList = styled.ul`
@@ -127,10 +118,6 @@ const HamburgerMenu = (props) => {
 
   return (
         <HamburgerMenuWrapper>
-            <LogoPartWrapper>
-                <Logo/>
-                <CloseMenu/>
-            </LogoPartWrapper>
             <LinkList>
                 <LinkItem>
                     <OuterHamburgerMenuLink href={'https://slack.com/intl/en-by/features'}> Why Slack?</OuterHamburgerMenuLink>
