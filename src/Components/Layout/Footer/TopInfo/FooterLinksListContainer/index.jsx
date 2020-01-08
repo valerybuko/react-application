@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {FooterLinkListContainerStyles} from './style';
+import { FooterLinkListContainerStyles } from './style';
 import FooterLinkList from './FooterLinkList';
 import LinkItem from '../../../../LinkItem';
 import colors from '../../../../../themes/colors';
@@ -28,6 +28,7 @@ const FooterTitle = styled.div`
     font-size: 14px;
     font-weight: bold;
     color: ${colors.darkgray}
+    margin-left: 17px;
 `;
 
 const FooterLinkListContainerComponent = styled.div`${FooterLinkListContainerStyles}`;
