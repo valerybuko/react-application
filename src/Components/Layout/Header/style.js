@@ -10,5 +10,4 @@ export const HeaderStyles = css`
     align-items: center;
     margin: 0 auto;
     background-color: ${colors.whiteDarker};
-    border: 1px solid darkblue;
 `;

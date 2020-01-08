@@ -8,6 +8,12 @@ export const defaultFonts = {
   fontStyleNormal: 'normal',
   fontStyleItatic: 'italic',
   fontStyleOblique: 'oblique',
+  fontWeightLight: 300,
+  fontWeightRegular: 400,
+  fontWeightMedium: 500,
+  fontWeightSemiBold: 600,
+  fontWeightBold: 700,
+  fontWeightBoldLarge: 800,
 };
 
 export const decorativeFonts = {

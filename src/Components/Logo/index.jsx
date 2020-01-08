@@ -1,8 +1,6 @@
-import React from "react";
+import React from 'react';
 import { ReactComponent as LogoSVG } from '../../svg/logo.svg';
 
-const Logo = () => {
-    return <LogoSVG/>;
-}
+const Logo = () => <LogoSVG/>;
 
 export default Logo;
