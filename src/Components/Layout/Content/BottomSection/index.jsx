@@ -12,10 +12,6 @@ const MainBottomSectionWrapper = styled.div`
     background-color: ${colors.lilac}
 `;
 
-const BottomSectionTitle = styled(Title)`
-    flex: 1;
-`;
-
 const BottomSectionWrapper = styled.div`${BottomSectionStyles}`;
 
 const BottonSectionButtomWrapper = styled.div`
@@ -26,6 +22,7 @@ const BottonSectionButtomWrapper = styled.div`
     
     @media (max-width: 1005px) {
         flex-direction: column;
+        align-items: center;
         width: 100%;
     }
 `;
@@ -37,7 +34,7 @@ const SlackButton = styled(Button)`
     padding: 19px 40px 20px;
     
       @media (max-width: 1005px) {
-        width: 100%;
+        width: 95%;
     }
 `;
 
@@ -49,14 +46,14 @@ const ContactButton = styled(Button)`
     padding: 19px 40px 20px;
     
      @media (max-width: 1005px) {
-       width: 100%; 
+       width: 95%; 
     }
 `;
 
 const BottomSection = (props) => (
     <MainBottomSectionWrapper>
         <BottomSectionWrapper>
-            <BottomSectionTitle fontSize={'50px'}>{TITLE_TEXT}</BottomSectionTitle>
+            <Title fontSize={'50px'}>{TITLE_TEXT}</Title>
             <BottonSectionButtomWrapper>
                 <SlackButton>TRY SLACK</SlackButton>
                 <ContactButton>CONTACT SALES</ContactButton>
