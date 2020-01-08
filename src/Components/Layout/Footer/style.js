@@ -7,6 +7,5 @@ export const FooterStyles = css`
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-    background-color: ${colors.whiteDarker};
-    border: 1px solid darkblue;
+    background-color: ${colors.whiteSmoke};
 `;

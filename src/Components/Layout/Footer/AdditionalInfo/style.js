@@ -6,7 +6,6 @@ export const AdditionalInfoStyles = css`
     flex-flow: row nowrap;
     justify-content: space-between;
     font-size: ${defaultFonts.footerFontSize}
-    border: 1px solid gray;
     
     @media (max-width: 750px) {
         flex-direction: column;
