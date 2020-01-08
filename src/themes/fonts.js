@@ -5,6 +5,7 @@ export const defaultFonts = {
   htmlFontSize: '16px',
   bodyFontSize: '16px',
   titleFontSize: '24px',
+  footerFontSize: '14px',
   fontStyleNormal: 'normal',
   fontStyleItatic: 'italic',
   fontStyleOblique: 'oblique',

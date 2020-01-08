@@ -1,12 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FooterStyles } from './style';
-/*import HamburgerMenu from '../Header/HamburgerMenu';*/
+import TopInfo from './TopInfo';
+import AdditonalInfo from './AdditionalInfo';
 
-const Footer = styled.footer`${FooterStyles}`;
+const FooterContainer = styled.footer`${FooterStyles}`;
 
-/* const Test = () => (<Footer>
-    <HamburgerMenu/>
-</Footer>); */
+const Footer = (props) => (
+    <FooterContainer>
+        <TopInfo/>
+        <AdditonalInfo/>
+    </FooterContainer>
+);
 
 export default Footer;
