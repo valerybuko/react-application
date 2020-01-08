@@ -33,6 +33,10 @@ const SlackButton = styled(Button)`
     width: 165px;
     padding: 19px 40px 20px;
     
+    &:hover {
+        cursor: pointer;
+    }
+    
       @media (max-width: 1005px) {
         width: 95%;
     }
@@ -44,6 +48,10 @@ const ContactButton = styled(Button)`
     opacity: 0.8;
     width: 205px;
     padding: 19px 40px 20px;
+    
+    &:hover {
+        cursor: pointer;
+    }
     
      @media (max-width: 1005px) {
        width: 95%; 
