@@ -8,5 +8,4 @@ export const HeaderNavbarStyles = css`
     align-items: center;
     flex: 6 1 600px;
     font-weight: ${defaultFonts.fontWeightRegular} 
-    border: 1px solid darkblue;
 `;
