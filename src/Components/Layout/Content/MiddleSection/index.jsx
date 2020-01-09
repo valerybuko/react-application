@@ -22,6 +22,10 @@ const ImageLinksWrapper = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
+    @media (max-width: 1033px) {
+        flex-direction: column;
+    }
 `;
 
 const MiddleSection = (props) => (

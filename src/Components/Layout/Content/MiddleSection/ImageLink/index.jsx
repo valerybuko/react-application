@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { ImageLinkStyles } from './style';
 import Title from '../../../../Title';
