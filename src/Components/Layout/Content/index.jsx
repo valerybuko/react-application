@@ -10,6 +10,7 @@ const ContentWrapper = styled.main`${ContentStyles}`;
 
 const Content = (props) => (
     <ContentWrapper>
+        {props.children}
         <TopSection/>
         <MiddleSection/>
         <BottomSection/>
