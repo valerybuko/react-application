@@ -10,6 +10,7 @@ const App = () => (
                 <Route exact path={'/sign-in'} component={LoginForm}/>
                 <Route exact path={'/login'} component={LoginForm}/>
                 <Route exact path={'/try-slack'} component={LoginForm}/>
+                <Route exact path={'/sign-in-info'} component={LoginForm}/>
             </Switch>
         </Layout>
     </Router>
