@@ -10,6 +10,7 @@ const TITLE_TEXT = 'Choose a better way to work';
 const MainBottomSectionWrapper = styled.div`
     width: 100%;
     background-color: ${colors.lilac}
+    padding: 120px 0 110px 0;
 `;
 
 const BottomSectionWrapper = styled.div`${BottomSectionStyles}`;
@@ -25,6 +26,11 @@ const BottonSectionButtomWrapper = styled.div`
         align-items: center;
         width: 100%;
     }
+`;
+
+const BottomSectionTitle = styled(Title)`
+    color: ${colors.white}
+    margin-bottom: 35px;
 `;
 
 const SlackButton = styled(Button)`
@@ -61,7 +67,7 @@ const ContactButton = styled(Button)`
 const BottomSection = (props) => (
     <MainBottomSectionWrapper>
         <BottomSectionWrapper>
-            <Title fontSize={'50px'}>{TITLE_TEXT}</Title>
+            <BottomSectionTitle fontSize={'50px'}>{TITLE_TEXT}</BottomSectionTitle>
             <BottonSectionButtomWrapper>
                 <SlackButton>TRY SLACK</SlackButton>
                 <ContactButton>CONTACT SALES</ContactButton>
