@@ -10,4 +10,8 @@ export const TopInfoStyles = css`
     @media (max-width: 1005px) {
         flex-direction: column
     }
+    
+    @media (max-width: 1065px) {
+        padding-left: 50px;  
+    }
 `;

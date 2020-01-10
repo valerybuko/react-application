@@ -7,6 +7,10 @@ export const BottomSectionStyles = css`
     align-items: center;
     margin: 0 auto;
     
+    @media (max-width: 1065px) {
+        padding-left: 50px;  
+    }
+     
     @media (max-width: 730px) {
         width: auto;
     }

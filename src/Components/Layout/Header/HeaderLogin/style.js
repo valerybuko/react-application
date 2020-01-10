@@ -7,4 +7,8 @@ export const HeaderLoginComponentStyles = css`
    justify-content: flex-end; 
    align-items: center;
    padding-right: 100px;
+   
+   @media (max-width: 1065px) {
+        padding-right: 50px;  
+   } 
 `;

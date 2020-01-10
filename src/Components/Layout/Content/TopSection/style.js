@@ -5,7 +5,7 @@ export const TopSectionStyles = css`
     padding: 90px 100px;
     background-size: 1100px 510px;
     
-    @media (max-width: 1023px) {
-        max-width: 480px;
+    @media (max-width: 1065px) {
+        padding: 90px 50px;  
     }
 `;
