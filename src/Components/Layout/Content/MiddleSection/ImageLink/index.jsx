@@ -9,7 +9,7 @@ const READ_SIGN = 'READ STORY';
 
 const ImageLinkWrapper = styled.a`
     ${ImageLinkStyles}
-    display: flex;
+    display: ${(props) => (props.isHide ? 'none' : 'flex')}
     flex-direction: column;
     justify-content: space-between;
     
@@ -45,8 +45,8 @@ const ImageSection = styled.img`
     height: 195px;
 `;
 
-const ImageLink = ({ imgSRC, text, url }) => (
-        <ImageLinkWrapper href={url}>
+const ImageLink = ({ imgSRC, text, url, ...props }) => (
+        <ImageLinkWrapper href={url} {...props}>
             <ImageSection src={imgSRC} alt="image" />
             <BlockTitle fontSize={'14px'}>{BLOCK_SIGN}</BlockTitle>
             <Title fontSize={'24px'}>{text}</Title>

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import styled from 'styled-components';
 import { MiddleSectionStyles } from './style';
 import Title from '../../../Title';
 import ImageLink from './ImageLink';
-import ImageSwitch from "./ImageSwitch";
+import ImageSwitch from './ImageSwitch';
 
 const MiddleSectionWrapper = styled.div`${MiddleSectionStyles}`;
 
@@ -23,30 +23,41 @@ const ImageLinksWrapper = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
-    @media (max-width: 1033px) {
-        flex-direction: column;
-    }
 `;
 
 const ImageSwitchesWrapper = styled.div`
     display: flex;
 `;
 
-const MiddleSection = (props) => (
-    <MiddleSectionWrapper>
-        <Title fontSize={'50px'}>What’s new at Slack</Title>
-        <ImageLinksWrapper>
-            <ImageLink imgSRC={section1ImageURL} text={section1Text} url={section1URL} />
-            <ImageLink imgSRC={section2ImageURL} text={section2Text} url={section2URL} />
-            <ImageLink imgSRC={section3ImageURL} text={section3Text} url={section3URL} />
-        </ImageLinksWrapper>
-        <ImageSwitchesWrapper>
-            <ImageSwitch/>
-            <ImageSwitch/>
-            <ImageSwitch/>
-        </ImageSwitchesWrapper>
-    </MiddleSectionWrapper>
-);
+const MiddleSection = (props) => {
+  function useWindowWidthSize() {
+    const [size, setSize] = useState([0]);
+    useLayoutEffect(() => {
+      function updateSize() {
+        setSize([window.innerWidth]);
+      }
+      window.addEventListener('resize', updateSize);
+      return () => window.removeEventListener('resize', updateSize);
+    }, []);
+    console.log(size);
+    return size;
+  }
+  useWindowWidthSize();
+  return (
+        <MiddleSectionWrapper>
+            <Title fontSize={'50px'}>What’s new at Slack</Title>
+            <ImageLinksWrapper>
+                <ImageLink imgSRC={section1ImageURL} text={section1Text} url={section1URL} />
+                <ImageLink imgSRC={section2ImageURL} text={section2Text} url={section2URL} />
+                <ImageLink imgSRC={section3ImageURL} text={section3Text} url={section3URL} />
+            </ImageLinksWrapper>
+            <ImageSwitchesWrapper>
+                <ImageSwitch/>
+                <ImageSwitch/>
+                <ImageSwitch/>
+            </ImageSwitchesWrapper>
+        </MiddleSectionWrapper>
+  );
+};
 
 export default MiddleSection;
