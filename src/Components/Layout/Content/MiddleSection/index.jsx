@@ -62,7 +62,12 @@ const MiddleSection = (props) => {
                 {
                     (windowWidthSize <= 1070)
                       ? <>
-                            <ImageLink imgSRC={section1ImageURL} text={section1Text} url={section1URL}/>
+
+                            {
+                                isMark1 ? <ImageLink imgSRC={section1ImageURL} text={section1Text} url={section1URL}/>
+                                  : isMark2 ? <ImageLink imgSRC={section2ImageURL} text={section2Text} url={section2URL}/>
+                                    : isMark3 ? <ImageLink imgSRC={section3ImageURL} text={section3Text} url={section3URL}/> : null
+                            }
                             <ImageSwitchesWrapper>
                                 <ImageSwitch isMark={isMark1} onClick={() => { setMark1(true); setMark2(false); setMark3(false); }}/>
                                 <ImageSwitch isMark={isMark2} onClick={() => { setMark2(true); setMark1(false); setMark3(false); }}/>

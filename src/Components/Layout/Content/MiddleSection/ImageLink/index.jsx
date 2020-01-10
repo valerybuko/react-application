@@ -12,6 +12,7 @@ const ImageLinkWrapper = styled.a`
     display: ${(props) => (props.isHide ? 'none' : 'flex')}
     flex-direction: column;
     justify-content: space-between;
+    min-height: 444px;
     
      &:hover {
         cursor: pointer;
