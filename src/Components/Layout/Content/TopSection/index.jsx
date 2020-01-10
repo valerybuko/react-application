@@ -89,7 +89,7 @@ const TopSection = (props) => (
                         <ButtonSign>TRY SLACK</ButtonSign>
                     </TopSectionSlackButton>
                 </NavLink>
-                <LinkElement href={'https://slackdemo.com/'}>
+                <LinkElement href={DEMO_URL}>
                     <TopDemoSlackButton>
                         <ButtonSign>SEE THE DEMO</ButtonSign>
                     </TopDemoSlackButton>

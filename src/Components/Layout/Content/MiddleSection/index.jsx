@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { MiddleSectionStyles } from './style';
 import Title from '../../../Title';
 import ImageLink from './ImageLink';
+import ImageSwitch from "./ImageSwitch";
 
 const MiddleSectionWrapper = styled.div`${MiddleSectionStyles}`;
 
@@ -28,6 +29,10 @@ const ImageLinksWrapper = styled.div`
     }
 `;
 
+const ImageSwitchesWrapper = styled.div`
+    display: flex;
+`;
+
 const MiddleSection = (props) => (
     <MiddleSectionWrapper>
         <Title fontSize={'50px'}>What’s new at Slack</Title>
@@ -36,6 +41,11 @@ const MiddleSection = (props) => (
             <ImageLink imgSRC={section2ImageURL} text={section2Text} url={section2URL} />
             <ImageLink imgSRC={section3ImageURL} text={section3Text} url={section3URL} />
         </ImageLinksWrapper>
+        <ImageSwitchesWrapper>
+            <ImageSwitch/>
+            <ImageSwitch/>
+            <ImageSwitch/>
+        </ImageSwitchesWrapper>
     </MiddleSectionWrapper>
 );
 
