@@ -17,7 +17,7 @@ const LoginButton = styled(Button)`
     font-weight: ${defaultFonts.fontWeightBold}
 `;
 
-const LoginLinkItem = styled.a`
+const LoginLinkItem = styled.span`
     color: ${colors.black};
     text-decoration: none;
     display: inline-block;
