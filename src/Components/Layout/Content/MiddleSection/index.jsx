@@ -23,6 +23,11 @@ const ImageLinksWrapper = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
+    @media (max-width: 1070px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 const ImageSwitchesWrapper = styled.div`
@@ -36,26 +41,41 @@ const MiddleSection = (props) => {
       function updateSize() {
         setSize([window.innerWidth]);
       }
+
       window.addEventListener('resize', updateSize);
       return () => window.removeEventListener('resize', updateSize);
     }, []);
-    console.log(size);
     return size;
   }
-  useWindowWidthSize();
+
+  const windowWidthSize = useWindowWidthSize();
+
+  const [isMark1, setMark1] = useState(true);
+  const [isMark2, setMark2] = useState(false);
+  const [isMark3, setMark3] = useState(false);
+
+
   return (
         <MiddleSectionWrapper>
             <Title fontSize={'50px'}>What’s new at Slack</Title>
             <ImageLinksWrapper>
-                <ImageLink imgSRC={section1ImageURL} text={section1Text} url={section1URL} />
-                <ImageLink imgSRC={section2ImageURL} text={section2Text} url={section2URL} />
-                <ImageLink imgSRC={section3ImageURL} text={section3Text} url={section3URL} />
+                {
+                    (windowWidthSize <= 1070)
+                      ? <>
+                            <ImageLink imgSRC={section1ImageURL} text={section1Text} url={section1URL}/>
+                            <ImageSwitchesWrapper>
+                                <ImageSwitch isMark={isMark1} onClick={() => { setMark1(true); setMark2(false); setMark3(false); }}/>
+                                <ImageSwitch isMark={isMark2} onClick={() => { setMark2(true); setMark1(false); setMark3(false); }}/>
+                                <ImageSwitch isMark={isMark3} onClick={() => { setMark3(true); setMark1(false); setMark2(false); }}/>
+                            </ImageSwitchesWrapper>
+                      </>
+                      : <>
+                            <ImageLink imgSRC={section1ImageURL} text={section1Text} url={section1URL}/>
+                            <ImageLink imgSRC={section2ImageURL} text={section2Text} url={section2URL}/>
+                            <ImageLink imgSRC={section3ImageURL} text={section3Text} url={section3URL}/>
+                      </>
+                }
             </ImageLinksWrapper>
-            <ImageSwitchesWrapper>
-                <ImageSwitch/>
-                <ImageSwitch/>
-                <ImageSwitch/>
-            </ImageSwitchesWrapper>
         </MiddleSectionWrapper>
   );
 };

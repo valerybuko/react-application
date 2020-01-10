@@ -5,7 +5,7 @@ import { ImageSwitchStyles } from './style';
 const ImageSwitchComponent = styled.div`${ImageSwitchStyles}`;
 
 const ImageSwitch = (props) => (
-    <ImageSwitchComponent>
+    <ImageSwitchComponent {...props}>
 
     </ImageSwitchComponent>
 );
