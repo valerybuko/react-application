@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 import { BottomSectionStyles } from './style';
 import Title from '../../../Title';
 import Button from '../../../Button';
@@ -69,7 +70,7 @@ const BottomSection = (props) => (
         <BottomSectionWrapper>
             <BottomSectionTitle fontSize={'50px'}>{TITLE_TEXT}</BottomSectionTitle>
             <BottonSectionButtomWrapper>
-                <SlackButton>TRY SLACK</SlackButton>
+                <NavLink to={'try-slack'}><SlackButton>TRY SLACK</SlackButton></NavLink>
                 <ContactButton>CONTACT SALES</ContactButton>
             </BottonSectionButtomWrapper>
         </BottomSectionWrapper>
