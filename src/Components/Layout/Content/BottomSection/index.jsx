@@ -71,7 +71,7 @@ const BottomSection = (props) => (
             <BottomSectionTitle fontSize={'50px'}>{TITLE_TEXT}</BottomSectionTitle>
             <BottonSectionButtomWrapper>
                 <NavLink to={'try-slack'}><SlackButton>TRY SLACK</SlackButton></NavLink>
-                <ContactButton>CONTACT SALES</ContactButton>
+                <NavLink to={'complex-form'}><ContactButton>CONTACT SALES</ContactButton></NavLink>
             </BottonSectionButtomWrapper>
         </BottomSectionWrapper>
     </MainBottomSectionWrapper>
