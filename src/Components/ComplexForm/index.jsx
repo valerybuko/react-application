@@ -4,15 +4,20 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
-import InputLabel from "@material-ui/core/InputLabel";
+import InputLabel from '@material-ui/core/InputLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import TextareaAutosize from '@material-ui/core/TextareaAutosize';
+import Link from '@material-ui/core/Link';
 import Button from '../Button';
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-        '& > *': {
-            margin: theme.spacing(1)
-        },
+  root: {
+    '& > *': {
+      margin: theme.spacing(1),
+      width: 420,
     },
+  },
 }));
 
 const LoginFormWrapper = styled.div`
@@ -20,8 +25,8 @@ const LoginFormWrapper = styled.div`
 `;
 
 const ComplexForm = (props) => {
-    const classes = useStyles();
-    return (
+  const classes = useStyles();
+  return (
         <LoginFormWrapper>
             <form className={classes.root}>
                 <TextField type={'text'} id="outlined-basic" label="First name" variant="outlined" placeholder={'Your first name'} required/><br/>
@@ -31,9 +36,7 @@ const ComplexForm = (props) => {
                 <TextField type={'text'} id="outlined-basic" label="Job title" variant="outlined" required/><br/>
                 <TextField type={'text'} id="outlined-basic" label="Company" variant="outlined" placeholder={'Acme Inc.'} required/><br/>
                 <InputLabel id="comp_size">Company size</InputLabel>
-                <Select
-                    id="company_size"
-                >
+                <Select id="company_size">
                     <MenuItem value={100}>1 - 100</MenuItem>
                     <MenuItem value={250}>100- 250</MenuItem>
                     <MenuItem value={1000}>251 - 1000</MenuItem>
@@ -41,9 +44,7 @@ const ComplexForm = (props) => {
                     <MenuItem value={10000}>7500+</MenuItem>
                 </Select><br/>
                 <InputLabel id="country">Country</InputLabel>
-                <Select
-                    id="country_list"
-                >
+                <Select id="country_list">
                     <MenuItem value={'Belarus'}>Belarus</MenuItem>
                     <MenuItem value={'USA'}>USA</MenuItem>
                     <MenuItem value={'Canada'}>Canada</MenuItem>
@@ -57,10 +58,20 @@ const ComplexForm = (props) => {
                     <MenuItem value={'licences'}>I want to buy licences on upgrade</MenuItem>
                     <MenuItem value={'Australia'}>I have a product question</MenuItem>
                 </Select><br/>
+                <FormControlLabel
+                    control={
+                        <Checkbox value="read_instructions" />
+                    }
+                    label="Please check the box to indicate that you have read our"
+                /><br/>
+                <InputLabel id="comment">Anything else? (optional)
+                    <Link href='https://slack.com/intl/en-by/terms-of-service'>Terms & Conditions.</Link>
+                </InputLabel>
+                <TextareaAutosize aria-label="minimum height" rowsMin={3} placeholder="What challenges are you looking to overcome with Slack?" /><br/>
                 <Button>SUBMIT</Button>
             </form>
         </LoginFormWrapper>
-    );
+  );
 };
 
 export default ComplexForm;
