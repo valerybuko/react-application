@@ -9,5 +9,4 @@ export const ContentStyles = css`
     flex: 1 1 auto;
     margin: 0 auto;
     background-color: ${colors.whiteDarker};
-    border: 1px solid green;
 `;

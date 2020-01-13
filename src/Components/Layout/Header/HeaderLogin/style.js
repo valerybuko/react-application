@@ -6,4 +6,9 @@ export const HeaderLoginComponentStyles = css`
    flex-flow: row nowrap;
    justify-content: flex-end; 
    align-items: center;
+   padding-right: 100px;
+   
+   @media (max-width: 1065px) {
+        padding-right: 50px;  
+   } 
 `;
